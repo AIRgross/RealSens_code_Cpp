@@ -6,15 +6,15 @@ matrix in order to use the camera on a rover and detect obstacles
 or objects of interest. The issue with the raw output was that 
 the depths frame is not aligned with the RGB frame. Also, once 
 both aligned, depths frame would show holes inside. I used a 
-smoothing function from the realsens library to fill this holes up.
+smoothing function from the realsens library to fill these holes up.
 
 The XYZ matrix link a pixel from the RGB frame to a position in space.
 I made this matrix using the dist_3d function from the intel real
 sens library. I only constructed this matrix for validation. 
-It is not supposed to be used in real time as it may reduce the 
-speed highly.
+It is not supposed to be used in real time as it may reduce highly the 
+speed.
 
-The XYZ matrix corresponds to a 3D RGB matrix where:
+The XYZ matrix corresponds to a 3D RGB matrix with:
 
 - R = x distance in the x-direction with respect to the camera center.
 - G = y ...
