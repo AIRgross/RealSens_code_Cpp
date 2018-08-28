@@ -20,7 +20,9 @@ The XYZ matrix corresponds to a 3D RGB matrix where:
 - G = y ...
 - B = z ...
 
-
+To not show the XYZ matrix:
+- comment the drawXYW function
+- comment the showXYZ function
 
 
 Reference
