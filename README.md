@@ -1,7 +1,7 @@
 RealSense SDK 2 Sample Program
 ==============================
 I modified part of the Align sample code made by Tsukasa SUGIURA.
-The goal was to output RGB, depths, color depths, and the XYZ matrix in order to use the camera on a rover and detect obstacle or object of interest.
+The goal was to output RGB, depths, color depths, and the XYZ matrix in order to use the camera on a rover and detect obstacles or objects of interest.
 The issue with the raw output was that the depths frame is not aligned with the RGB frame.
 Also, once both aligned, depths frame would show holes inside. 
 I used a smoothing function from the realsens library to fill this holes up.
