@@ -104,7 +104,7 @@ inline void RealSense::updateFrame()
     if( !aligned_frameset.size() ){
         return;
     }
-
+    // Option for holes filling
     spat.set_option(RS2_OPTION_HOLES_FILL,4);
 
 }
@@ -138,7 +138,7 @@ inline void RealSense::updateDepth()
 
 }
 
- // Update Depth
+ // Update Depth Color
 inline void RealSense::updateDepthColor()
 {
     // Retrieve Depth color Frame
@@ -162,6 +162,7 @@ void RealSense::draw()
     // Draw color Depth
     drawDepthColor();
 
+    // initialize XYZ mat
     drawXYZ();
 
 }
@@ -210,7 +211,8 @@ void RealSense::show()
     // Show Depth Color
     showDepthColor();
 
-    // Show XYZ Color
+    // Show XYZ Color and free memory
+    // for xyz mat
     showXYZ();
 }
 
